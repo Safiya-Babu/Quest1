@@ -15,7 +15,7 @@ def get_response(prompt):
     for line in response.iter_lines():
         if line:
             result = json.loads(line)
-            print(result["response"])
+            print(result["response"], end="")
 
 prompt = ""
 
